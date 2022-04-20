@@ -10,3 +10,9 @@ This was the main expertimental task whose results were logged as a primary meas
 
 #### Orientation detection task
 This task served as a control and needed to be matched for overall complexity. 
+
+
+#### What is needed
+Octave GNU and Psychtoolbox
+
+
