@@ -10,7 +10,7 @@ The aim of this task is to evaluate the degree of bias while making a judgment o
 
 ![taskprocedure](https://user-images.githubusercontent.com/104091627/164989059-44f4b481-d0e3-48aa-b3ee-d0be6ecd4912.png)
 
-During task completion, correct responses will be collected for each shift point of line bisection and a point of subjective equality ([PSE](https://dictionary.apa.org/point-of-subjective-equality)) will be computed to quantify the tendency in making biased perceptual jedgement either to the left (negative values) or to the right (positive values). Below an example of data collected from a subject with a leftward bias
+Correct responses will be collected for each shift point of line bisection and a point of subjective equality ([PSE](https://dictionary.apa.org/point-of-subjective-equality)) will be computed to quantify the tendency in making biased perceptual jedgement either to the left (negative values) or to the right (positive values). Below an example of data collected from a subject with a leftward bias
 
 ![testsubj](https://user-images.githubusercontent.com/104091627/165067906-afe0ce7d-abbb-4971-ad0e-4e8cce617244.png)
 
