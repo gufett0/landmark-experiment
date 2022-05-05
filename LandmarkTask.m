@@ -1,5 +1,3 @@
-addpath 'C:\Users\neuro\Desktop\ccPAS\LandmarkTask'; % LabEEG2
-
 % Set task parameters
 r_percent = 2.8;  % i.e, ±0.56° range. If 17 shift locations, then it's ±0.07° (±.35%) increments   
 % r_percent = 3.85;  % i.e, ±0.77° range. If 23 shift locations, then it's ±0.07° (±.35%) increments    
