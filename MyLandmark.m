@@ -87,7 +87,7 @@ stim_shift_deg = shift_deg(shuf_idx);
 stim_shift_pix = round(stim_shift_deg * ppd(1));%we only take ppd 1 because it's the x value, and we
 %are only shifting stimuli in the x direction (i.e., horizontally)
 
-fixVA = .39; % as in Benwell
+fixVA = .39; 
 fixCrossDimPixH = fixVA * ppd(1); % size of the hor arms of our fixation cross
 fixCrossDimPixV = fixVA * ppd(2); % size of the vert arms of our fixation cross
 % Now we set the coordinates (these are all relative to zero)
@@ -123,9 +123,9 @@ HideCursor;	% Hide the mouse cursor
 center = [rect(3) rect(4)]/2;	% center of screen (pixel coordinates)
 %%%%%%%%%%%%%%%%%
 if str2double(answer{2}) == 1
-    txt = 'Quale lato è il più LUNGO?'; 
+    txt = 'Which side is LONGER?'; 
 elseif str2double(answer{2}) == 2
-    txt = 'Quale lato è il più CORTO?'; 
+    txt = 'Which side is SHORTER?'; 
 else
     error('intructions ill-specified')
 end
@@ -138,17 +138,17 @@ txtloc_top = [center(1) - textbound(3)/2, ... % x
 display_question(w, white, str2double(answer{2}), txtloc_top, fontSize); 
 Screen('DrawLines', w, allCoords, stimThickness, white, center); 
 Screen('TextSize',w, fontSize/2);
-textBound = Screen('TextBounds', w, '< Posizionati e premi un tasto per iniziare >');
+textBound = Screen('TextBounds', w, '< Get ready and press any key to start >');
 txtloc_Top = [center(1) - textBound(3)/2, ... % x
     	       center(2) - 250]; % y  
-Screen(w, 'DrawText', '< Posizionati e premi un tasto per iniziare >', txtloc_Top(1), txtloc_Top(2), white);
+Screen(w, 'DrawText', '< Get ready and press any key to start >', txtloc_Top(1), txtloc_Top(2), white);
 Screen('Flip', w);
 disp(['TOT NUM OF TRIALS: ' num2str(num_trials)]);
 
 FlushEvents('keyDown');
 KbWait;
 
-%% Optimize presentation timing with Guido's function
+%% Optimize presentation timing with custom function frames_Brescia
 [~, press_start_time, ~] = KbCheck; %check response
 [ ~, actual_sec(1), ~, ~] = frames_Brescia(0, ifi);
 [ ~, actual_sec(2), ~, ~] = frames_Brescia(fix_dur, ifi);
@@ -278,7 +278,7 @@ for t = 1:num_trials
     
 end % for loop
     
-Screen(w, 'DrawText', '                       Blocco completato! Grazie!', txtloc_Top(1), txtloc_Top(2), white);
+Screen(w, 'DrawText', '                       This block is completed! Thanks!', txtloc_Top(1), txtloc_Top(2), white);
 Screen('Flip', w);
 
     
