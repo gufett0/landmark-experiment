@@ -22,7 +22,7 @@ Below is an example of data collected from a subject with a leftward bias:
 ### Requirements
   Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction for download [here](http://psychtoolbox.org/download.html))
 
-  #### Custom functions:
+  #### Custom functions needed:
   [VisAng.m](https://github.com/gufett0/landmark-experiment/blob/main/VisAng.m) to calculate the pixels per degree or degrees per pixel
   
   [frames_Brescia.m](https://github.com/gufett0/landmark-experiment/blob/main/frames_Brescia.m) to optimize stimuli presentation timing 
