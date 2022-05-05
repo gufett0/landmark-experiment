@@ -59,15 +59,14 @@ Lets do some PRACTICE!
 (press enter to start)
 ```
 If you haven't installed Psychtoolbox the program will stop at this point.
-The pracrice task will call the MyLandPractice.m function which is virtually identical to the following main task function MyLandmark.m, except for some design parameters. 
-The whole task sequence is set to run for two blocks so as to cover both instructions.
+The pracrice task will call the MyLandPractice.m function, virtually identical to the following main task function MyLandmark.m, except for some design parameters. 
 
-Finally, once MyLandmark.m gets called the command window will ask you to provide a name for the output files.
+Once MyLandmark.m gets called the command window will ask you to provide a name for the output files
 ```
 Enter Subject id: 
 ```
 If the file name already exists it'll output a warning and ask you to overwrite.
-
+The whole task sequence is set to run for two blocks so as to cover both instructions.
 
 
 
