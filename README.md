@@ -22,7 +22,12 @@ Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction
 
 ### How to run the program
 
-Open and run the LandmarkTask.m file. 
+Open the LandmarkTask.m file in the editor.
+If haven't already set the current Matlab search path do this by running
+```
+addpath 'C:\Users\AddYourOwnPath'; 
+```
+
 The command window will ask you which instruciton order you want to start with: "Which side is longer" and then "Which side is shorter" (option 12) or viceversa (option 21)
 
 ```
