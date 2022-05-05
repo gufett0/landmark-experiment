@@ -1,4 +1,3 @@
-%% LANDMARK TASK
 addpath 'C:\Users\neuro\Desktop\ccPAS\LandmarkTask'; % LabEEG2
 
 % Set task parameters
