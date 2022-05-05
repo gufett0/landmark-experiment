@@ -26,7 +26,6 @@ disp(['Block ' num2str(i) ' |  Instruction ' in])
 Design.range_percent = r_percent;
 Design.shifts = Shifts;
 Design.shifts_rep = Shifts_rep;
-basedir     = 'C:\Users\neuro\Desktop\ccPAS\LandmarkTask\Outputs'; cd(basedir); % labEEG2
 
 [log(:,:,i), tmg] = MyLandmark(Design, Timing, Setting, [], in); 
 end
