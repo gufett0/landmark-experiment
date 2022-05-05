@@ -10,6 +10,8 @@ The aim of this task is to evaluate the degree of bias while making a judgment o
 
 ![taskprocedure](https://user-images.githubusercontent.com/104091627/164989059-44f4b481-d0e3-48aa-b3ee-d0be6ecd4912.png)
 
+Before starting the task, participants will be instructed like this: *"Welcome! Depending on the instruction that will appear on screen, you'll have to indicate which side of the line, compared to the center, is either shorter or longer. Use the right or left keys accordingly to give your response"*
+
 Correct responses will be collected for each bisection shift and a point of subjective equality ([PSE](https://dictionary.apa.org/point-of-subjective-equality)) will be computed to quantify the tendency in making biased perceptual jedgement either to the left (negative values) or to the right (positive values). 
 Below is an example of data collected from a subject with a leftward bias:
 
@@ -23,12 +25,13 @@ Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction
 ### How to run the program
 
 Open the LandmarkTask.m file in the editor.
-If haven't already set the current Matlab search path do this by running
+If you haven't already set the current Matlab search path do so by typing in the command window
 ```
 addpath 'C:\Users\AddYourOwnPath'; 
 ```
+This is also where the three output files will be saved (.mat, _log.txt, _timing.txt), unless you specify otherwise.
 
-The command window will ask you which instruciton order you want to start with: "Which side is longer" and then "Which side is shorter" (option 12) or viceversa (option 21)
+Now run the file. The command window will ask you which instruciton order you want to start with: "Which side is longer" and then "Which side is shorter" (option 12) or viceversa (option 21)
 
 ```
 Instruction code  (12 | 21) :
@@ -41,6 +44,11 @@ Lets do some PRACTICE!
 (press enter to start)
 ```
 If you haven't installed Psychtoolbox the program will stop at this point.
+The pracrice task will call the MyLandPractice.m function which is virtually identical to the main task function MyLandmark.m
+The whole task sequence is set to run for two blocks so as to cover both instructions. 
+
+
+
 
 
 
