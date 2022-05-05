@@ -1,15 +1,5 @@
-% %% Randomization
-%  C = {'A', 'B', 'C'; 'A', 'C', 'B'; 'B', 'C', 'A'; 'B', 'A', 'C'; 'C', 'B', 'A'; 'C', 'A', 'B'} ;
-%  C = Shuffle( repmat(C, 2, 1), 2 );
- % idx = latsq(numel(C));
-% M = C(idx);
-% M = repmat(M, 4, 1);
-% M = Shuffle( [ [repmat({'1', '2'}, 6, 1); repmat({'2', '1'}, 6, 1)]   M ], 2); 
-
-
-%% LANDMARK TASK (VER B)
+%% LANDMARK TASK
 addpath 'C:\Users\neuro\Desktop\ccPAS\LandmarkTask'; % LabEEG2
-% addpath 'D:\Data\Debora\ccPAS_task'; % Alien
 
 % Set task parameters
 r_percent = 2.8;  % i.e, ±0.56° range. If 17 shift locations, then it's ±0.07° (±.35%) increments   
@@ -40,7 +30,7 @@ Design.range_percent = r_percent;
 Design.shifts = Shifts;
 Design.shifts_rep = Shifts_rep;
 basedir     = 'C:\Users\neuro\Desktop\ccPAS\LandmarkTask\Outputs'; cd(basedir); % labEEG2
-% basedir = 'D:\Data\Debora\ccPAS_task\Outputs'; cd(basedir); % Alien
+
 [log(:,:,i), tmg] = MyLandmark(Design, Timing, Setting, [], in); 
 end
 
