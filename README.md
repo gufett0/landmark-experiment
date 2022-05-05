@@ -23,9 +23,11 @@ Below is an example of data collected from a subject with a leftward bias:
   Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction for download [here](http://psychtoolbox.org/download.html))
 
   #### Custom functions:
-  [VisAng.m](https://github.com/gufett0/landmark-experiment/blob/main/VisAng.m) calculates the pixels per degree or degrees per pixel
+  [VisAng.m](https://github.com/gufett0/landmark-experiment/blob/main/VisAng.m) to calculate the pixels per degree or degrees per pixel
   
-  frames_Brescia.m ensures ...
+  [frames_Brescia.m](https://github.com/gufett0/landmark-experiment/blob/main/frames_Brescia.m) to optimize stimuli presentation timing 
+  
+  [display_question.m](https://github.com/gufett0/landmark-experiment/blob/main/display_question.m) to print instructions on screen
 
 ### How to run the program
 
