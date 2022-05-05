@@ -20,7 +20,12 @@ Below is an example of data collected from a subject with a leftward bias:
 
 
 ### Requirements
-Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction for download [here](http://psychtoolbox.org/download.html))
+  Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction for download [here](http://psychtoolbox.org/download.html))
+
+  #### Custom functions:
+  [VisAng.m](https://github.com/gufett0/landmark-experiment/blob/main/VisAng.m) calculates the pixels per degree or degrees per pixel
+  
+  frames_Brescia.m ensures ...
 
 ### How to run the program
 
@@ -30,6 +35,14 @@ If you haven't already set the current Matlab search path do so by typing in the
 addpath 'C:\Users\AddYourOwnPath'; 
 ```
 This is also where the three output files will be saved (.mat, _log.txt, _timing.txt), unless you specify otherwise.
+
+If you want to modify the parameters of the task you can change any field of these structure variables:
+
+```
+Design = struct('llength_deg', 20, 'shifts', [], 'range_percent', [], 'shifts_rep', []);
+Setting = struct( 'res', [1920 1080], 'sz', [51 28.8], 'vdist', 56, 'fontSize', 38); 
+Timing = struct('stim_dur', 0.15, 'iti_dur', 2, 'fix_range', [2 2.5]);
+```
 
 Now run the file. The command window will ask you which instruciton order you want to start with: "Which side is longer" and then "Which side is shorter" (option 12) or viceversa (option 21)
 
@@ -44,8 +57,14 @@ Lets do some PRACTICE!
 (press enter to start)
 ```
 If you haven't installed Psychtoolbox the program will stop at this point.
-The pracrice task will call the MyLandPractice.m function which is virtually identical to the main task function MyLandmark.m
-The whole task sequence is set to run for two blocks so as to cover both instructions. 
+The pracrice task will call the MyLandPractice.m function which is virtually identical to the following main task function MyLandmark.m, except for some design parameters. 
+The whole task sequence is set to run for two blocks so as to cover both instructions.
+
+Finally, once MyLandmark.m gets called the command window will ask you to provide a name for the output files.
+```
+Enter Subject id: 
+```
+If the file name already exists it'll output a warning and ask you to overwrite.
 
 
 
