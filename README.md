@@ -40,7 +40,7 @@ addpath 'C:\Users\AddYourOwnPath';
 ```
 This is also where the three output files will be saved (.mat, _log.txt, _timing.txt), unless you specify otherwise.
 
-If you want to modify the parameters of the task you can change any field of these structure variables:
+If you want to modify the parameters of the task you can change any field of these structure variables (check comments in the code to learn about these):
 
 ```
 Design = struct('llength_deg', 20, 'shifts', [], 'range_percent', [], 'shifts_rep', []);
