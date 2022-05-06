@@ -5,7 +5,7 @@ The following is a Matlab/Octave program of a classic behavioural task that I ma
 This was utilized in a pilot experiment conducted during summer 2021 at this [lab](http://www.cognitiveneuroscience.it/?lang=en) in Brescia, Italy.
 
 
-### Brief background notes
+## Brief background notes
 The aim of this task is to evaluate the degree of bias while making a judgment on the length of two segments in a line bisected at different shift points. The following is a graphical representation of the task sequence in one trial: the lines will stay on screen for a brief moment after which participants will give a response within a limited interval. 
 
 ![taskprocedure](https://user-images.githubusercontent.com/104091627/164989059-44f4b481-d0e3-48aa-b3ee-d0be6ecd4912.png)
@@ -19,17 +19,19 @@ Below is an example of data collected from a subject with a leftward bias:
 
 
 
-### Requirements
+## Requirements
   Matlab 2019b/Octave GNU and Psychophysics Toolbox Version 3 (PTB-3) (instruction for download [here](http://psychtoolbox.org/download.html))
 
-  #### Custom functions needed:
+  #### Customized functions:
   [VisAng.m](https://github.com/gufett0/landmark-experiment/blob/main/VisAng.m) to calculate the pixels per degree or degrees per pixel
   
   [frames_Brescia.m](https://github.com/gufett0/landmark-experiment/blob/main/frames_Brescia.m) to optimize stimuli presentation timing 
   
   [display_question.m](https://github.com/gufett0/landmark-experiment/blob/main/display_question.m) to print instructions on screen
+  
+  [draw_pnline.m](https://github.com/gufett0/landmark-experiment/blob/main/draw_pnline.m) to draw the horizontal bisected line
 
-### How to run the program
+## How to run the program
 
 Open the LandmarkTask.m file in the editor.
 If you haven't already set the current Matlab search path do so by typing in the command window
