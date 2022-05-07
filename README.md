@@ -4,7 +4,7 @@
 The following is a Matlab/Octave program of a classic behavioural task that I made for a research project about visuospatial bias in human subjects.
 This was utilized in a pilot experiment conducted during summer 2021 at this [lab](http://www.cognitiveneuroscience.it/?lang=en) in Brescia, Italy.
 
-**This work helped me improve my coding and debugging skills for high reliability and milliseconds timing precision.**  
+**This work helped me improve my coding and debugging skills for high efficiency and milliseconds timing precision.**  
 
   ## Brief background notes
 The aim of this task is to evaluate the degree of bias while making a judgment on the length of two segments in a line bisected at different shift points. The following is a graphical representation of the task sequence in one trial: the lines will stay on screen for a brief moment after which participants will give a response within a limited interval. 
@@ -13,7 +13,7 @@ The aim of this task is to evaluate the degree of bias while making a judgment o
 
 Before starting the task, participants will be instructed like this: *"Welcome! Depending on the instruction that will appear on screen, you'll have to indicate which side of the line, compared to the center, is either shorter or longer. Use the right or left keys accordingly to give your response"*
 
-Correct responses will be collected for each bisection shift and a point of subjective equality ([PSE](https://dictionary.apa.org/point-of-subjective-equality)) will be computed to quantify the tendency in making biased perceptual jedgement either to the left (negative values) or to the right (positive values). 
+Correct responses will be collected for each bisection shift and a point of subjective equality ([PSE](https://dictionary.apa.org/point-of-subjective-equality)) will be computed to quantify the tendency in making biased perceptual judgement either to the left (negative values) or to the right (positive values). 
 Below is an example of data collected from a subject with a leftward bias:
 
 ![testsubj](https://user-images.githubusercontent.com/104091627/165067906-afe0ce7d-abbb-4971-ad0e-4e8cce617244.png)
